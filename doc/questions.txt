@@ -1,0 +1,71 @@
+- JDK, JVM
+- Interfaces
+- Sealed class
+- Inheritance
+- Polymorphism
+- Encapsulation
+- Equals & HashCode
+- Volatile Keyword
+- records
+- Comparable & Comparator
+- Singleton class
+- Immutable class
+- Reflection
+- Create custom annotation
+- Hashmap, ConcurrentHashMap
+- Spring autoconfiguration
+- How dependency injection in Spring works
+- Executor Service
+- Virtual threads
+- CompletableFuture, @Async
+- Generics
+- Garbage collection
+- @Transactional
+- Hibernate
+- N+1 query problem in Hibernate/JPA
+- JMS
+- Explain CAS (Compare-And-Swap) in detail
+- What causes memory leaks in Java?
+- What is deadlock? How to detect and fix it?
+- Difference between synchronized vs ReentrantLock
+- JVM tuning basics (GC types, heap sizing)
+
+System
+
+- How will you handle large volume of data which is business critical, but difficult to use?
+- LRU
+- Hashmap
+- Circuit Breaker
+- SQL vs NoSQL — when to use each?
+- Microservice
+- API Gateway, Service mesh
+- K8
+- RabbitMQ/ActiveMQ
+- Design a high-volume, fault-tolerant system
+- How would you design a multi-region distributed system?
+- Design a system that handles millions of requests per second
+- How do you ensure high availability vs consistency?
+- Explain CAP theorem in real systems
+- How do you handle backpressure?
+- Strategies for data partitioning & sharding
+- How do you design for eventual consistency?
+- How do you reduce latency in a Java service?
+- How does Kafka guarantee ordering?
+- What is containerization? How Docker works internally?
+- How does sharding work?
+- How do you handle large data migrations?
+- How do you design REST APIs at scale?
+- ACID properties
+- Security (OAuth, JWT)
+- “Production is down. CPU is 100%. What will you do?”
+- “Latency suddenly increased. How do you debug?”
+- “Memory usage keeps increasing—how do you investigate?”
+- Design a rate limiter
+- Processes vs Threads
+- Context switching
+- How HTTP, HTTPS works (deep, not basic)
+- TCP vs UDP
+- Load balancing strategies (L4 vs L7)
+- Caching
+- K8 Pod lifecycle
+- How do you choose between Kafka vs RabbitMQ?
