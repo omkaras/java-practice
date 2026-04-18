@@ -1,3 +1,6 @@
+# Interview Preparation Notes
+
+## Code Java
 - JDK, JVM
 - Interfaces
 - Sealed class
@@ -6,13 +9,14 @@
 - Encapsulation
 - Equals & HashCode
 - Volatile Keyword
-- records
+- Records
 - Comparable & Comparator
 - Singleton class
 - Immutable class
 - Reflection
+- Hashing
 - Create custom annotation
-- Hashmap, ConcurrentHashMap
+- HashMap, ConcurrentHashMap
 - Spring autoconfiguration
 - How dependency injection in Spring works
 - Executor Service
@@ -29,18 +33,42 @@
 - What is deadlock? How to detect and fix it?
 - Difference between synchronized vs ReentrantLock
 - JVM tuning basics (GC types, heap sizing)
+- Why is contructor injection better than field injection?
 
-System
+---
 
-- How will you handle large volume of data which is business critical, but difficult to use?
+## Data Structures (DS)
+- Stack
+- Array
 - LRU
-- Hashmap
+- HashMap
+- Linked List (Singly)
+- Linked List (Doubly)
+- Set
+- Queue
+- Tree
+
+---
+
+## Design Patterns
+- Factory Method
+- Singleton
+- Builder
+- SAGA Pattern
+- Blue Green deployment
+- A/B testing
+- Canary testing
+
+---
+
+## System Design
+- How will you handle large volume of data which is business critical, but difficult to use?
 - Circuit Breaker
 - SQL vs NoSQL — when to use each?
 - Microservice
-- API Gateway, Service mesh
-- K8
-- RabbitMQ/ActiveMQ
+- API Gateway, Service Mesh
+- Kubernetes (K8)
+- RabbitMQ / ActiveMQ
 - Design a high-volume, fault-tolerant system
 - How would you design a multi-region distributed system?
 - Design a system that handles millions of requests per second
@@ -67,5 +95,14 @@ System
 - TCP vs UDP
 - Load balancing strategies (L4 vs L7)
 - Caching
-- K8 Pod lifecycle
+- Kubernetes Pod lifecycle
 - How do you choose between Kafka vs RabbitMQ?
+
+---
+
+## Problems
+- Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+- You are given two Singly Linked Lists of integers, which may have an intersection point. Your task is to return the first intersection node. If there is no intersection, return NULL.
+- Given a singly linked list of 'N' nodes. The objective is to determine the middle node of a singly linked list. However, if the list has an even number of nodes, we return the second middle node.
+- Sort an array of 0s, 1s and 2s
+- Write a program to do basic string compression. For a character which is consecutively repeated more than once, replace consecutive duplicate occurrences with the count of repetitions. If a string has 'x' repeated 5 times, replace this "xxxxx" with "x5". The string is compressed only when the repeated character count is more than 1.
