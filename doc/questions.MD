@@ -34,6 +34,7 @@
 - Difference between synchronized vs ReentrantLock
 - JVM tuning basics (GC types, heap sizing)
 - Why is contructor injection better than field injection?
+- How will you create your own @Transaction impl. and how will you create proxies?
 
 ---
 
