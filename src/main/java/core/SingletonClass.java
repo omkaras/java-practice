@@ -5,7 +5,12 @@ import java.util.HashMap;
 
 public class SingletonClass {
   public static void main(String[] args) throws Exception {
-    Runnable runnable = () -> System.out.println(Thread.currentThread().getName() + ": " + MySingletonClass.getInstance().toString());
+    Runnable runnable =
+        () ->
+            System.out.println(
+                Thread.currentThread().getName()
+                    + ": "
+                    + MySingletonClass.getInstance().toString());
 
     Thread thread1 = new Thread(runnable, "t1");
     Thread thread2 = new Thread(runnable, "t2");
@@ -20,7 +25,7 @@ public class SingletonClass {
     System.out.println(Thread.currentThread().getName() + ": " + instance2);
 
     HashMap<String, String> s = new HashMap<>();
-    s.put("s","ss");
+    s.put("s", "ss");
   }
 }
 
@@ -36,7 +41,7 @@ class MySingletonClass {
   public static MySingletonClass getInstance() {
     if (INSTANCE == null) {
       synchronized (MySingletonClass.class) {
-        if(INSTANCE == null) {
+        if (INSTANCE == null) {
           INSTANCE = new MySingletonClass("val1");
         }
       }

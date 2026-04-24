@@ -12,7 +12,7 @@ public class LinkedList {
       temp = temp.getNext();
       System.out.print(temp.getValue() + " --> ");
     }
-    System.out.print("null [Size: "+ size +"]");
+    System.out.print("null [Size: " + size + "]");
     System.out.println();
   }
 
@@ -41,16 +41,16 @@ public class LinkedList {
   }
 
   public void addAtPos(int value, int position) {
-    if(position >= size) {
+    if (position >= size) {
       System.out.println("~~~ INSERT NOT POSSIBLE ~~~");
       return;
     }
     Node node = new Node(value);
-    if(position == 0) {
+    if (position == 0) {
       addNodeAtStart(value);
-    }else{
+    } else {
       Node temp = start;
-      for(int i = 0; i < position - 1; i++) {
+      for (int i = 0; i < position - 1; i++) {
         temp = temp.getNext();
       }
       node.setNext(temp.getNext());

@@ -1,6 +1,6 @@
 plugins {
   id("java")
-  id("com.diffplug.spotless") version "8.4.0"
+  id("com.diffplug.spotless") version "6.25.0"
 }
 
 group = "org.example"
@@ -8,6 +8,15 @@ version = "1.0-SNAPSHOT"
 
 repositories {
   mavenCentral()
+}
+
+spotless {
+  java {
+    googleJavaFormat() // standard formatter
+    removeUnusedImports()
+    trimTrailingWhitespace()
+    endWithNewline()
+  }
 }
 
 dependencies {

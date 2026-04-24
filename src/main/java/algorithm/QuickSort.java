@@ -3,7 +3,7 @@ package algorithm;
 class QuickSort {
   // Test
   public static void main(String[] args) {
-    int[] arr = {5,67,56,57,38,75,64,2,33,47,1,36,84,73,7,4,5,66};
+    int[] arr = {5, 67, 56, 57, 38, 75, 64, 2, 33, 47, 1, 36, 84, 73, 7, 4, 5, 66};
 
     quickSort(arr, 0, arr.length - 1);
 
@@ -26,7 +26,7 @@ class QuickSort {
 
   private static int partition(int[] arr, int low, int high) {
     int pivot = arr[high]; // choosing last element as pivot
-    int i = low - 1;       // pointer for smaller element
+    int i = low - 1; // pointer for smaller element
 
     for (int j = low; j < high; j++) {
       if (arr[j] <= pivot) {

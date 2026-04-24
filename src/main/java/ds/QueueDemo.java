@@ -1,8 +1,5 @@
 package ds;
 
-public class QueueDemo {
-}
+public class QueueDemo {}
 
-class MyQueue {
-
-}
+class MyQueue {}

@@ -7,17 +7,23 @@ import java.util.List;
 
 public class ComparableComparatorClass {
   public static void main(String[] args) {
-    Land land1 = new Land(2, "garden", "Baner", List.of("p1, p2, p3"),
-      List.of(new Owner("Tom"), new Owner("Harry")));
+    Land land1 =
+        new Land(
+            2,
+            "garden",
+            "Baner",
+            List.of("p1, p2, p3"),
+            List.of(new Owner("Tom"), new Owner("Harry")));
 
-    Land land2 = new Land(1, "tuk", "Balewadi", List.of("p2, p3"),
-      List.of(new Owner("Rob"), new Owner("Pam")));
+    Land land2 =
+        new Land(
+            1, "tuk", "Balewadi", List.of("p2, p3"), List.of(new Owner("Rob"), new Owner("Pam")));
 
-    Land land3 = new Land(1, "btuk", "Baner", List.of("p2, p3"),
-      List.of(new Owner("Rob"), new Owner("Pam")));
+    Land land3 =
+        new Land(
+            1, "btuk", "Baner", List.of("p2, p3"), List.of(new Owner("Rob"), new Owner("Pam")));
 
-    Land land4 = new Land(3, "teak", "Aundh", List.of("p3"),
-      List.of(new Owner("Rob")));
+    Land land4 = new Land(3, "teak", "Aundh", List.of("p3"), List.of(new Owner("Rob")));
 
     List<Land> lands = new ArrayList<>(List.of(land1, land2, land3, land4));
 
@@ -47,14 +53,21 @@ class Land implements Comparable<Land> {
 
   @Override
   public String toString() {
-    return "Land{" +
-      "id=" + id +
-      ", name='" + name + '\'' +
-      ", area='" + area + '\'' +
-      ", zones=" + zones +
-      ", owners=" + owners +
-      '}' +
-      '\n';
+    return "Land{"
+        + "id="
+        + id
+        + ", name='"
+        + name
+        + '\''
+        + ", area='"
+        + area
+        + '\''
+        + ", zones="
+        + zones
+        + ", owners="
+        + owners
+        + '}'
+        + '\n';
   }
 
   public Land(int id, String name, String area, List<String> zones, List<Owner> owners) {
@@ -67,13 +80,12 @@ class Land implements Comparable<Land> {
 
   @Override
   public int compareTo(Land o) {
-   /* int cmp = Integer.compare(this.id, o.getId());
+    /* int cmp = Integer.compare(this.id, o.getId());
     if (cmp != 0) return cmp;
 
     return this.name.compareTo(o.getName());*/
 
-    return Comparator.comparingInt(Land::getId)
-      .thenComparing(Land::getName).compare(this, o);
+    return Comparator.comparingInt(Land::getId).thenComparing(Land::getName).compare(this, o);
   }
 
   public int getId() {
@@ -93,8 +105,6 @@ record Owner(String name) {
 
   @Override
   public String toString() {
-    return "Owner{" +
-      "name='" + name + '\'' +
-      '}';
+    return "Owner{" + "name='" + name + '\'' + '}';
   }
 }

@@ -1,4 +1,5 @@
 package algorithm;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +32,6 @@ class LRUNode {
     this.key = key;
     this.value = value;
   }
-
 }
 
 class LRU {

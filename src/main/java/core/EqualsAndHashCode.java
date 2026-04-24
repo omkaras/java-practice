@@ -22,19 +22,18 @@ record Car(String name, int chassis, int price, List<Variant> variants) {
 
     Car car = (Car) c1;
 
-    return Objects.equals(this.name, car.name()) &&
-      this.price == car.price() &&
-      this.chassis == car.chassis() &&
-      Objects.equals(this.variants, car.variants());
+    return Objects.equals(this.name, car.name())
+        && this.price == car.price()
+        && this.chassis == car.chassis()
+        && Objects.equals(this.variants, car.variants());
   }
-
 }
 
 record Variant(String variantName) {
   @Override
   public boolean equals(Object obj) {
-    if(this == obj) return true;
-    if(obj == null || obj.getClass() != this.getClass()) return false;
+    if (this == obj) return true;
+    if (obj == null || obj.getClass() != this.getClass()) return false;
 
     Variant variant = (Variant) obj;
     return Objects.equals(this.variantName, variant.variantName);

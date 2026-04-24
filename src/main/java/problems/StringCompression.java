@@ -6,19 +6,19 @@ public class StringCompression {
     String expected = "a3b5c2d4w5f4";
     String computedString = compressString(input);
     System.out.println(computedString);
-    System.out.println(computedString.equals(expected) ? "Pass": "Fail");
+    System.out.println(computedString.equals(expected) ? "Pass" : "Fail");
   }
 
   public static String compressString(String s) {
-    if(s.isBlank()) {
+    if (s.isBlank()) {
       return null;
     }
 
     StringBuilder sb = new StringBuilder();
 
     int count = 1;
-    for(int i = 0; i < s.length();i++) {
-      if((i+1) < s.length() && s.charAt(i) == s.charAt(i+1)) {
+    for (int i = 0; i < s.length(); i++) {
+      if ((i + 1) < s.length() && s.charAt(i) == s.charAt(i + 1)) {
         count++;
       } else {
         sb.append(s.charAt(i)).append(count);

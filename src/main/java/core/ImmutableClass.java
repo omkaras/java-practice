@@ -19,9 +19,9 @@ public class ImmutableClass {
 }
 
 final class MyImmutableClass {
-  final private String name;
-  final private int age;
-  final private List<Friend> friends;
+  private final String name;
+  private final int age;
+  private final List<Friend> friends;
 
   public MyImmutableClass(String name, int age, List<Friend> friends) {
     this.name = name;
