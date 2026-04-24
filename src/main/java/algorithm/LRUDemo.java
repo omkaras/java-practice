@@ -1,5 +1,4 @@
 package algorithm;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,10 +18,8 @@ public class LRUDemo {
     // Read from cache
     // Add in cache
     // Add in cache
-
   }
 }
-
 
 class LRUNode {
   LRUNode next;
@@ -36,10 +33,8 @@ class LRUNode {
   }
 
 }
-}
 
 class LRU {
-
   private final int capacity;
   Map<Integer, LRUNode> map;
 
@@ -76,6 +71,5 @@ class LRU {
       // head <-> 3 <-> 2 <-> tail
       node.prev = head;
     }
-
   }
 }

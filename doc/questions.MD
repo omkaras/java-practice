@@ -28,7 +28,6 @@
 - Hibernate
 - N+1 query problem in Hibernate/JPA
 - JMS
-- Explain CAS (Compare-And-Swap) in detail
 - What causes memory leaks in Java?
 - What is deadlock? How to detect and fix it?
 - Difference between synchronized vs ReentrantLock
@@ -38,7 +37,7 @@
 
 ---
 
-## Data Structures (DS)
+## Data Structures (DS) and Algorithms
 - Stack
 - Array
 - LRU
@@ -48,6 +47,12 @@
 - Set
 - Queue
 - Tree
+- Explain CAS (Compare-And-Swap) in detail
+- Binary search
+- Merge sort
+- Quick sort
+- Reverse Linked List
+- Sort Linked List
 
 ---
 
@@ -98,6 +103,15 @@
 - Caching
 - Kubernetes Pod lifecycle
 - How do you choose between Kafka vs RabbitMQ?
+- How to handle API which gives extremely slow response?
+- Circuit breaker
+- Rate limited
+- Other Microservices pattern
+- Different types of authentication
+- Authorisation
+- PKCE
+- SAML
+- SSO
 
 ---
 

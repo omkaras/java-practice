@@ -1,56 +1,6 @@
-package algorithm;
+package ds;
 
-public class LinkedListClass {
-  public static void main(String[] args) {
-    LinkedList list = new LinkedList();
-    list.addNodeAtStart(2);
-    list.display();
-    list.addNodeAtStart(1);
-    list.display();
-    list.addNodeAtEnd(3);
-    list.display();
-    list.addNodeAtStart(5);
-    list.display();
-    list.addNodeAtEnd(6);
-    list.display();
-    list.addAtPos(7, 0);
-    list.display();
-    list.addAtPos(8, 2);
-    list.display();
-    list.addAtPos(9, 1);
-    list.display();
-    list.addAtPos(10, 10);
-    list.display();
-  }
-}
-
-class Node {
-  private int value;
-  private Node next;
-
-  public Node(int value) {
-    this.next = null;
-    this.value = value;
-  }
-
-  public int getValue() {
-    return value;
-  }
-
-  public Node getNext() {
-    return next;
-  }
-
-  public void setValue(int value) {
-    this.value = value;
-  }
-
-  public void setNext(Node next) {
-    this.next = next;
-  }
-}
-
-class LinkedList {
+public class LinkedList {
   private Node start;
   private Node end;
   private int size;
@@ -107,5 +57,27 @@ class LinkedList {
       temp.setNext(node);
     }
     size++;
+  }
+}
+
+class Node {
+  private final int value;
+  private Node next;
+
+  public Node(int value) {
+    this.next = null;
+    this.value = value;
+  }
+
+  public int getValue() {
+    return value;
+  }
+
+  public Node getNext() {
+    return next;
+  }
+
+  public void setNext(Node next) {
+    this.next = next;
   }
 }
