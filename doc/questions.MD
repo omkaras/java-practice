@@ -25,6 +25,7 @@
 - Generics
 - Garbage collection
 - @Transactional
+- @Cacheable [Reference](https://gaetanopiazzolla.github.io/java/2025/06/23/proxy-pattern-spring.html)
 - Hibernate
 - N+1 query problem in Hibernate/JPA
 - JMS
