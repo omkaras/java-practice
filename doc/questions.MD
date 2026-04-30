@@ -113,6 +113,13 @@
 - PKCE
 - SAML
 - SSO
+- I have multiple clusters of DB, if one cluster has out-of-sync data and my read call goes to that DB, how would I fix this issue?
+- Different types of Indexing
+- Rate limit thread safe
+- LRU cache Object(1)
+- Create your own Array list and what will happen if you increase size. Follow up question - while creating new array(assuming your current list has 10k+ data, what if other thread came and try to add item in the list, what will happen)
+- Design application which needs to show real time data to the user
+- I have executor service (Fixed side = 10), and I have threads waiting for it. Which data structures I will use to store the waiting thread, and Executor service, and once one thread in Executor service finishes, how will I talk to data structure of waiting there to come and run inside executor service
 
 ---
 
